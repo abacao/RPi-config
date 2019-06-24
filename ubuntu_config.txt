@@ -1,0 +1,16 @@
+enable_uart=1
+kernel=kernel8.bin
+kernel=vmlinuz
+initramfs initrd.img followkernel
+#device_tree_address=0x03000000
+dtparam=i2c_arm=on
+dtparam=spi=on
+arm_64bit=1
+
+## More Voltage Options 
+#over_voltage=-16 # 0.8V
+#over_voltage=0   # 1.2V
+over_voltage=4 	  # 1.3V
+#over_voltage=8   # 1.4V
+
+gpu_mem=16
